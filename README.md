@@ -2,6 +2,8 @@
 These scripts were made as part of a class project. The goal was to analyze the sentiment of news articles and compare them to forex rates. 
 The DailyMirror (Sri Lanka) news articles were webscraped and the sentiment was analyzed using the TextBlob library. The forex rates were obtained an API from the Central Bank of Sri Lanka.
 
+Project is accessible through the following link: [https://hamza-anver.github.io/F24-ForexSentiments/](https://hamza-anver.github.io/F24-ForexSentiments/)
+
 ## Structure
 This project is divided into 4 scripts. 
 1. `scraper.py` - This script takes in an argument to define its mode of operation (scrape or clean). The scrape mode scrapes the news articles and saves them to a file. The DailyMirror site requires a button press to view a few articles at a time, each page is saved seperately into the `dailymirror_archive_pages` directory (not included in the repo). The clean mode cleans the scraped data and saves it as JSON files named by day of publishing of the article into the `cleaned_data` directory.
