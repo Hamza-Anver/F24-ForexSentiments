@@ -83,7 +83,7 @@ def main():
     )
 
     fig.update_layout(
-        title="Sentiment vs Spot Rate",
+        title=f"Sentiment vs Spot Rate ({merged_smooth['sentiment'].corr(merged_smooth['spot_lkr_usd']):.5f})",
         xaxis_title="Date",
         yaxis_title="Sentiment",
         yaxis2=dict(title="Spot Rate", overlaying="y", side="right"),
